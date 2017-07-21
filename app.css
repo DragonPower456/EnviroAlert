@@ -1,0 +1,88 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+svg {
+    font: 14px 'Open Sans';
+    display: block;
+    margin: auto;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  fill: #696969;
+}
+
+.axis .tick line {
+  stroke: black;
+}
+
+.area {
+  stroke-width: 1;
+}
+
+.area.outer {
+  fill: gainsboro;
+  stroke: grey;
+}
+
+.line {
+  fill: none;
+  stroke: url(#temperature-gradient);
+  stroke-width: 3px;
+    opacity: 0.5;
+}
+
+.linehumidity {
+  fill: none;
+  stroke: url(#temperature-gradient_linehumidity);
+  stroke-width: 3px;
+    opacity: 0.5;
+}
+
+.lowerInnerArea{
+    fill: url(#temperature-lowerAreaGradient);
+    stroke: url(#temperature-lowerAreaGradient);
+    opacity: 0.5;
+}
+
+.upperInnerArea{
+    fill: url(#temperature-upperAreaGradient);
+    stroke: url(#temperature-upperAreaGradient);
+    opacity: 0.5;
+}
+
+.lowerInnerAreaHumidity{
+    fill: url(#temperature-areagradient_humidity);
+    stroke: url(#temperature-areagradient_humidity);
+    opacity: 0.5;
+}
+
+.upperInnerHumidityArea{
+    fill: url(#humidity-upperAreaGradient);
+    stroke: url(#humidity-upperAreaGradient);
+    opacity: 0.5;
+}
+
+.legend .legend-bg {
+  fill: grey;
+  stroke: grey;
+}
+
+.legend text {
+  fill: #fff;
+  font-weight: bold;
+}
+
+#heatmap{
+    background-image: url(images/heatmap_empty2.png); 
+    background-repeat: no-repeat;
+    width: 226px;
+    height: 528px;
+    display: block;
+    margin: auto;
+}
